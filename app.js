@@ -1,9 +1,16 @@
-console.log('hello world')
+// Data types
+// Primitive type
+
+var Name = "Aniket";
+var num = 127.76593849;
+var str = "s";
+
+let brand = null;
+console.log(brand);
 
 
-console.log({name: 'Aniket'});
+//Non Primitive
 
-console.log(false, 23234343, 'string', {name : "Aniket"})
-console.warn("This is warning")
-
-console.error('this is error...')
+var arr = [1,2,3,4,5]
+arr.push('value')
+console.log(arr.length)
