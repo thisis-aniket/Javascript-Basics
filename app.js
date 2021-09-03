@@ -1,16 +1,19 @@
-// Data types
-// Primitive type
+//Operator
+// Arithmetic Operator
 
-var Name = "Aniket";
-var num = 127.76593849;
-var str = "s";
+let a = 12
+let b = 2
 
-let brand = null;
-console.log(brand);
+console.log(a + b)
+
+console.log(a - b)
+
+console.log(a * b)
+
+console.log(a / b)
+
+console.log(a % b)
+
+console.log(a ** b)
 
 
-//Non Primitive
-
-var arr = [1,2,3,4,5]
-arr.push('value')
-console.log(arr.length)
