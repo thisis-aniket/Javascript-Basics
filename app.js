@@ -1,11 +1,17 @@
-const element = document.getElementById("selectMe");
+const element = document.querySelector('#selectMe')
+// element.innerHTML = "This is from JS"
 
-const elementClass = document.getElementsByClassName("heading");
+// element.style.color = "cyan"
+// element.style.fontSize = "40px"
+// element.style = 'display:none'
 
-const elementTag = document.getElementsByTagName("h2");
+// console.log(element.classList)
+// element.classList.add('five')
+// console.log(element.classList)
+// element.classList.remove('one')
+// console.log(element.classList)
 
-const elementSelector = document.querySelector(".heading");
+const body = document.querySelector('body')
 
-const elementSelectorAll = document.querySelectorAll(".heading");
-
-console.log(elementSelectorAll);
+console.log(body.classList.toggle('.dark'))
+console.log(element.classList.contains('three'))
