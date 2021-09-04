@@ -1,36 +1,11 @@
-//Operator
-// Arithmetic Operator
+const element = document.getElementById("selectMe");
 
-// let Name = "2"
-// let a = 2
+const elementClass = document.getElementsByClassName("heading");
 
+const elementTag = document.getElementsByTagName("h2");
 
-// a += Name
-// a/=7
-// a *=
-// a **=
+const elementSelector = document.querySelector(".heading");
 
-// Comparision Operator
-// const a = 21
-// const b = 7
+const elementSelectorAll = document.querySelectorAll(".heading");
 
-// console.log('a > b', a > b)
-// console.log('a == b', a == b)
-// console.log('a != b', a != b)
-// console.log('a >= b', a >= b)
-// console.log('a <= b', a <= b)
-
-// Logical Operators
-// console.log(true && false)
-// console.log(true || false)
-
-//Conditional Statements
-// function check(num) {
-//     if(num%2==0){
-//         console.log('even')
-//     }else if(num%2==1){
-//         console.log('odd')
-//     }else{
-//         console.log('zero')
-//     }
-// }
+console.log(elementSelectorAll);
