@@ -42,7 +42,10 @@ const counter = {
     next : function() {
         return ++(this.count)
     },
-    key: this.location
+    key: this.location,
+    prev : () => {
+        return --(this.count)
+    }
 }
 
 console.log(counter)
@@ -50,6 +53,7 @@ console.log(counter.next())
 console.log(counter)
 console.log(counter.next())
 console.log(counter)
-console.log(counter.next())
+// Output will NaN arrow function will not this keyword but just this keyword return window
+console.log(counter.prev())
 
 // console.log(counter.key)
