@@ -65,7 +65,6 @@ let marks = [1, 2, 3, 4, 5, 6];
 // });
 // console.log(newArr);
 
-
 // console.log(
 //   ranks.map((e, index) => {
 //     return e * 100;
@@ -81,14 +80,32 @@ let marks = [1, 2, 3, 4, 5, 6];
 // let newarr = ranks.map((e, index) => {
 //     if(e%2===0)
 //         return e
-    
+
 // })
 // console.log(newarr);
 
 // Filter
-let newfilterarr = marks.filter((e, index) => {
-    console.log(e, index)
-    if(e%2===0)
-        return e
-})
-console.log(newfilterarr)
+// let newfilterarr = marks.filter((e, index) => {
+//     console.log(e, index)
+//     if(e%2===0)
+//         return e
+// })
+// console.log(newfilterarr)
+
+//Promises in JS
+let concert = false;
+let attendConcert = new Promise(function (resolve, reject) {
+  setTimeout(() => {
+    if (concert) {
+      resolve("Bob attented concert...");
+    } else {
+      reject("Bob Failed to attend concert...");
+    }
+  }, 2000);
+});
+
+// console.log(attendConcert)
+attendConcert
+  .then((data) => console.log(data))
+  .catch((err) => console.log(err));
+// attendConcert.catch((err) => console.log(err));
