@@ -92,6 +92,7 @@ let marks = [1, 2, 3, 4, 5, 6];
 // })
 // console.log(newfilterarr)
 
+// -----------------------------------------------------
 //Promises in JS
 let concert = false;
 let attendConcert = new Promise(function (resolve, reject) {
@@ -104,8 +105,35 @@ let attendConcert = new Promise(function (resolve, reject) {
   }, 2000);
 });
 
-// console.log(attendConcert)
-attendConcert
-  .then((data) => console.log(data))
-  .catch((err) => console.log(err));
-// attendConcert.catch((err) => console.log(err));
+// -------------------------------------------------------
+console.log(attendConcert);
+// attendConcert
+//   .then((data) => console.log(data))
+//   .catch((err) => console.log(err));
+
+// -------------------------------------------------------
+// Async And Await
+// Alternative for then and catch
+// async : makes a function return promise
+// await : makes function wait for a promise
+
+// async function afunc() {
+//   try {
+//     let result = await attendConcert;
+//     console.log(result);
+//   } catch (e) {
+//     console.log(e);
+//   }
+// }
+// afunc()
+
+let asyncFunc = async () => {
+  try {
+    let result = await attendConcert;
+    console.log(result);
+  } catch (e) {
+    console.log(e);
+  }
+};
+
+asyncFunc();
